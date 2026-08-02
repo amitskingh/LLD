@@ -6,12 +6,15 @@ This repository contains Java examples and notes for object-oriented programming
 
 - [SOLID Principles](notes/001_solid_principles.md)
 - [Behavioral Design Patterns](notes/002_behaviour_pattern.md)
+- [Java Collections Interview Notes](notes/Java_Collections_Interview_Notes.md)
 
 ## OOP Basics
 
 - [Object Oriented Programming Interview Guide](oops/Readme.md)
+- [Java OOP Interview Notes](oops/JavaOOPInterviewNotes.md)
 - [Types of Classes in Java](oops/Notes.md)
 - [Java Rules Cheat Sheet](oops/JavaRulesCheatSheet.md)
+- [Java Packages vs Folders](oops/JavaPackagesVsFolders.md)
 
 ## SOLID Principles
 
