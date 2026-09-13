@@ -1,5 +1,16 @@
 For **LLD**, you don't need to learn all of UML. You mainly need the relationships you'll use while designing classes.
 
+## UML relationship cheat sheet
+
+| UML         | Relationship                   | Java idea        |
+| ----------- | ------------------------------ | ---------------- |
+| `────▷`     | **Inheritance**                | `extends`        |
+| `- - - -▷`  | **Implementation**             | `implements`     |
+| `────>`     | **Association / Navigability** | has/knows/uses   |
+| `◆────`     | **Composition**                | strong ownership |
+| `◇────`     | **Aggregation**                | weak ownership   |
+| `- - - - >` | **Dependency**                 | temporary use    |
+
 ## UML arrows you should know for LLD
 
 ### 1. Inheritance — `is-a`
@@ -25,7 +36,7 @@ The **hollow triangle always points to the parent**.
 ### 2. Interface Implementation — `implements`
 
 ```text
-CreditCard ─────────▷ Payment
+CreditCard - - - -▷ Payment
 ```
 
 Where `Payment` is an interface.
@@ -187,11 +198,12 @@ Symbols **inside the class** describe visibility:
 Symbols **between classes** describe relationships:
 
 ```text
-────▷     Inheritance / Implementation
-────>     Association / Navigability
-◆────     Composition
-◇────     Aggregation
-- - - ->  Dependency
+────▷      Inheritance / Generalization
+- - - -▷   Interface Implementation / Realization
+────>      Association / Navigability
+◆────      Composition
+◇────      Aggregation
+- - - - >  Dependency
 ```
 
 ---
@@ -239,7 +251,7 @@ Read as:
 ### Interface Implementation
 
 ```text
-CreditCardPayment ─────▷ PaymentStrategy
+CreditCardPayment - - - -▷ PaymentStrategy
 ```
 
 Read as:
@@ -571,7 +583,7 @@ CreditCardPayment implements PaymentStrategy
 → **Implementation**
 
 ```text
-CreditCardPayment ─────▷ PaymentStrategy
+CreditCardPayment - - - -▷ PaymentStrategy
 ```
 
 ---
@@ -645,7 +657,7 @@ Child → Parent
 
 2. IMPLEMENTATION — IMPLEMENTS
 
-CreditCardPayment ─────▷ PaymentStrategy
+CreditCardPayment - - - -▷ PaymentStrategy
 
 Class → Interface
 
@@ -737,7 +749,7 @@ Dog ─────────▷ Animal
 
 
 Implementation
-CreditCard ───▷ Payment
+CreditCard - - - -▷ Payment
              implements
              Class → Interface
 
